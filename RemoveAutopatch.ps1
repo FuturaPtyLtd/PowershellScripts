@@ -34,8 +34,13 @@ function Unenroll-WindowsUpdateAssets {
     Write-Output '$UpdateCategory ID removal response (NoContent is good) - ' $response.StatusCode
 }
 
+Disconnect-MgGraph -ErrorAction SilentlyContinue
+Write-Output "Disconnected from Graph"
 
 Connect-MgGraph -Scopes 'Device.Read.All','WindowsUpdates.ReadWrite.All' -Environment Global -NoWelcome
+
+$account = Get-MgContext
+Write-Output 'Connected to Graph on Account: '$account.Account
 
 $uri = 'https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice'
 
