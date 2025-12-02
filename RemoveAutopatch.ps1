@@ -1,6 +1,5 @@
 function Unenroll-WindowsUpdateAssets {
     param(
-        [Parameter(Mandatory)]
         [string[]] $Ids,
 
         [Parameter(Mandatory)]
