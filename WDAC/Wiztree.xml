@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.0</VersionEx>
+  <PolicyID>{019B2ADE-C550-70C8-8E37-5555DCCA9816}</PolicyID>
+  <BasePolicyID>{019B0221-C3A5-748D-9248-7F1ABBB79BE7}</BasePolicyID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+  </Rules>
+  <EKUs />
+  <FileRules />
+  <Signers>
+    <Signer ID="ID_SIGNER_A_019B2ADEC4F57249AC88114092CF8EC4" Name="Sectigo Public Code Signing CA EV R36">
+      <CertRoot Type="TBS" Value="F55821C081B58E86EAA202923E715E1524C422C7BE0469B13A9E7A319E50D70CB5B67E864273029A79250F9DC3203CBD" />
+      <CertPublisher Value="Antibody Software Limited" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Code Integrity">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_019B2ADEC4F57249AC88114092CF8EC4" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Kernel Mode Code Integrity">
+      <ProductSigners />
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_A_019B2ADEC4F57249AC88114092CF8EC4" />
+  </CiSigners>
+  <HvciOptions>2</HvciOptions>
+  <Settings>
+    <Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Wiztree</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>129661</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

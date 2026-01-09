@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.0</VersionEx>
+  <PolicyID>{019B02A0-FE40-73FC-91A9-01ECAA31BFCB}</PolicyID>
+  <BasePolicyID>{019B0221-C3A5-748D-9248-7F1ABBB79BE7}</BasePolicyID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+  </Rules>
+  <EKUs />
+  <FileRules>
+    <Allow ID="ID_ALLOW_A_019B02A0FDC871C1A30A4669BAE7B07C" FriendlyName="Sha256 Hash for: Vanara.PInvoke.WTSApi32.dll" Hash="BD143C9B547B28C8336AE6077EA8363F0F51D36F5A348108BC5D8D65EFC12ABB" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC878118B0A3474A3397019" FriendlyName="Sha1 Hash for: Vanara.PInvoke.WTSApi32.dll" Hash="1C631C6B4B2FB22D9B3717EFAD7FA45ACE8630C1" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC8712281A3A61C4B22D7F5" FriendlyName="Sha256 Hash for: diagnostics.bat" Hash="DA3C37779F0EADE51E77232C2D01A343D146C0F9A67569D1E8BE63AE7401F0A7" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87DC0A9D634C7ABB214FE" FriendlyName="Sha1 Hash for: diagnostics.bat" Hash="3A6F751312524045CFBA5416B2A80C966AB787E0" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC872829C4285E6C0C65FBE" FriendlyName="Sha256 Hash for: Unity.Container.dll" Hash="1759DAE30426A809BE13E6C00DAAD7929B2E9A909670D6DE3BA3E82A44A68E2A" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC8732B81004FC02A4E69D1" FriendlyName="Sha1 Hash for: Unity.Container.dll" Hash="844C83A4BA9C398C80A45BE0BE8CFA4514752041" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC871D9A71689890038F68C" FriendlyName="Sha256 Hash for: Vanara.Core.resources.dll" Hash="854A498B10C7C51DDC40F0CF16295C2CC3345194CF862820F8C0B16683F1051F" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87D71AB077F3FB92D12E7" FriendlyName="Sha1 Hash for: Vanara.Core.resources.dll" Hash="B82D140BB31CBCBEF2F5DF11C086A5F765143253" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC8710EABCB0305FD4AAC7A" FriendlyName="Sha256 Hash for: Vanara.Core.dll" Hash="B53CE81A09C1244D14C0CED4C1500A0A5D4A129B167A3BE58B0875072F8F49A0" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87B129D809F7FC9A1DA34" FriendlyName="Sha1 Hash for: Vanara.Core.dll" Hash="06405823B217B3D118AB2B69BA5F23C92728D40A" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC874BF920BD8B5B72278F6" FriendlyName="Sha256 Hash for: log4net.dll" Hash="73FA86161BA073B787635484A0D0E76602870710E5AE63B201550322AD6F6A97" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC874208841DBD50CC3CA28" FriendlyName="Sha1 Hash for: log4net.dll" Hash="F0B54ACF7E38A5BEA911172E2070A3B9B0BE1FBF" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87B2AAA70DDC2D99BE8E7" FriendlyName="Sha256 Hash for: Unity.log4net.dll" Hash="1963D4730D4A8982B1784F5DF9EEC8279FC8722932BB034F9060100E08D12AE0" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87D32ABABF914AB851383" FriendlyName="Sha1 Hash for: Unity.log4net.dll" Hash="6BA726CAA9661BC5481F0035E515C34DF8529D28" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87854AAA8BEAA8A905274" FriendlyName="Sha256 Hash for: ARSoft.Tools.Net.dll" Hash="AC6A6742E88A34DC72B0A39C7B378AABE37BE058ADBE395731709D85843F02E1" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC8780895A1D9DF75714083" FriendlyName="Sha1 Hash for: ARSoft.Tools.Net.dll" Hash="DBAB19AA4438D63D6BD3F331446C0B5E677CF264" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC874209EF1D51FFA7CDD96" FriendlyName="Sha256 Hash for: Unity.Abstractions.dll" Hash="93095BC009EFF907982AA6C26D1F70A2402BD8980E3336FEF4967231AD987041" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC874FA8CE60DF4BA0C597F" FriendlyName="Sha1 Hash for: Unity.Abstractions.dll" Hash="E59E358A979F357A2D78B5566573207BF97A6332" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87F62BD8B729DAF9CBF59" FriendlyName="Sha256 Hash for: Vanara.PInvoke.Shared.dll" Hash="2FC97C58481ADCE993159416E8790AE38A2BD33C0C24CDF47F036842D4808684" />
+    <Allow ID="ID_ALLOW_A_019B02A0FDC87A59B71ADF1125604453" FriendlyName="Sha1 Hash for: Vanara.PInvoke.Shared.dll" Hash="6345EF08641B10A41E902B8B7C36CD8F34DD7A6E" />
+  </FileRules>
+  <Signers>
+    <Signer ID="ID_SIGNER_A_019B02A0FDC8752A9FB2E036535F8B5F" Name="GlobalSign GCC R45 EV CodeSigning CA 2020">
+      <CertRoot Type="TBS" Value="D9C7DB0B704F07089440C56E69A0F31D730EDF77CFBF7514630E8B5390A270FE" />
+      <CertPublisher Value="DNSFilter, Inc." />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B02A0FDC87FF29061F4B00B4A1C69" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B02A0FDC87746885976A8702F8DCA" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B02A0FDC876E281D6931E708979DB" Name=".NET Foundation Projects Code Signing CA2">
+      <CertRoot Type="TBS" Value="A1BEDD53F9260FD3E0CB84900BF05837563BE8AEE86F613562196AE77804F456" />
+      <CertPublisher Value="Json.NET (.NET Foundation)" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B02A0FDC8784883DB3A9C7B7D7069" Name="Sectigo Public Code Signing CA R36">
+      <CertRoot Type="TBS" Value="0EEB0F83C55CCAAF275CEC9CAAED00280B6DD9BD8E37BD8A191A5CF77A0E2D1298EDB019E2A1E67E3F7BD4B1C7616DC0" />
+      <CertPublisher Value="Legion of the Bouncy Castle Inc." />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Code Integrity">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_019B02A0FDC8752A9FB2E036535F8B5F" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B02A0FDC87FF29061F4B00B4A1C69" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B02A0FDC87746885976A8702F8DCA" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B02A0FDC876E281D6931E708979DB" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B02A0FDC8784883DB3A9C7B7D7069" />
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC871C1A30A4669BAE7B07C" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC878118B0A3474A3397019" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC8712281A3A61C4B22D7F5" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87DC0A9D634C7ABB214FE" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC872829C4285E6C0C65FBE" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC8732B81004FC02A4E69D1" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC871D9A71689890038F68C" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87D71AB077F3FB92D12E7" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC8710EABCB0305FD4AAC7A" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87B129D809F7FC9A1DA34" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC874BF920BD8B5B72278F6" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC874208841DBD50CC3CA28" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87B2AAA70DDC2D99BE8E7" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87D32ABABF914AB851383" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87854AAA8BEAA8A905274" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC8780895A1D9DF75714083" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC874209EF1D51FFA7CDD96" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC874FA8CE60DF4BA0C597F" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87F62BD8B729DAF9CBF59" />
+          <FileRuleRef RuleID="ID_ALLOW_A_019B02A0FDC87A59B71ADF1125604453" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Kernel Mode Code Integrity">
+      <ProductSigners />
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_A_019B02A0FDC8752A9FB2E036535F8B5F" />
+    <CiSigner SignerId="ID_SIGNER_A_019B02A0FDC87FF29061F4B00B4A1C69" />
+    <CiSigner SignerId="ID_SIGNER_A_019B02A0FDC87746885976A8702F8DCA" />
+    <CiSigner SignerId="ID_SIGNER_A_019B02A0FDC876E281D6931E708979DB" />
+    <CiSigner SignerId="ID_SIGNER_A_019B02A0FDC8784883DB3A9C7B7D7069" />
+  </CiSigners>
+  <HvciOptions>2</HvciOptions>
+  <Settings>
+    <Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>DnsFilter</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>129661</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

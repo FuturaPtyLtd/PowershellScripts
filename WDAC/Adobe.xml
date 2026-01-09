@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.0</VersionEx>
+  <PolicyID>{019B2ADF-9112-7664-9E6D-DEA52258BC18}</PolicyID>
+  <BasePolicyID>{019B0221-C3A5-748D-9248-7F1ABBB79BE7}</BasePolicyID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+  </Rules>
+  <EKUs />
+  <FileRules />
+  <Signers>
+    <Signer ID="ID_SIGNER_A_019B2ADF90BF7C699888177E95B8C96F" Name="DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1">
+      <CertRoot Type="TBS" Value="65B1D4076A89AE273F57E6EEEDECB3EAE129B4168F76FA7671914CDF461D542255C59D9B85B916AE0CA6FC0FCF7A8E64" />
+      <CertPublisher Value="Adobe Inc." />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Code Integrity">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_019B2ADF90BF7C699888177E95B8C96F" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Kernel Mode Code Integrity">
+      <ProductSigners />
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_A_019B2ADF90BF7C699888177E95B8C96F" />
+  </CiSigners>
+  <HvciOptions>2</HvciOptions>
+  <Settings>
+    <Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Adobe</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>129661</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

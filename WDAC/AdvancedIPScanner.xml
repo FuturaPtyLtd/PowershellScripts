@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.0</VersionEx>
+  <PolicyID>{019B0536-E7D4-76D9-94C3-C4A0DB11FEB8}</PolicyID>
+  <BasePolicyID>{019B0221-C3A5-748D-9248-7F1ABBB79BE7}</BasePolicyID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+  </Rules>
+  <EKUs />
+  <FileRules />
+  <Signers>
+    <Signer ID="ID_SIGNER_A_019B0536E757790D94E7AFC29F5C81B8" Name="Symantec Class 3 Extended Validation Code Signing CA - G2">
+      <CertRoot Type="TBS" Value="B3C925B4048C3F7C444D248A2B101186B57CBA39596EB5DCE0E17A4EE4B32F19" />
+      <CertPublisher Value="Famatech Corp." />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E757792BBE24640ACACB8A6D" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E75779929FF05D4DBD16B4C5" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E7577D2E84B3AE78058D95AD" Name="Symantec Class 3 SHA256 Code Signing CA">
+      <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
+      <CertPublisher Value="Famatech Corp." />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E7577489B2575FBE027571C4" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E757727397A85BD13A757A37" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_019B0536E7577DDCB998E85111F8C453" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+      <CertPublisher Value="Microsoft Corporation" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Code Integrity">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E757790D94E7AFC29F5C81B8" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E757792BBE24640ACACB8A6D" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E75779929FF05D4DBD16B4C5" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E7577D2E84B3AE78058D95AD" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E7577489B2575FBE027571C4" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Kernel Mode Code Integrity">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E757727397A85BD13A757A37" />
+          <AllowedSigner SignerId="ID_SIGNER_A_019B0536E7577DDCB998E85111F8C453" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_A_019B0536E757790D94E7AFC29F5C81B8" />
+    <CiSigner SignerId="ID_SIGNER_A_019B0536E757792BBE24640ACACB8A6D" />
+    <CiSigner SignerId="ID_SIGNER_A_019B0536E75779929FF05D4DBD16B4C5" />
+    <CiSigner SignerId="ID_SIGNER_A_019B0536E7577D2E84B3AE78058D95AD" />
+    <CiSigner SignerId="ID_SIGNER_A_019B0536E7577489B2575FBE027571C4" />
+  </CiSigners>
+  <HvciOptions>2</HvciOptions>
+  <Settings>
+    <Setting Provider="AllHostIds" Key="AllKeys" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>AdvancedIPScanner</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>129661</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>
