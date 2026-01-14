@@ -9,9 +9,6 @@
       <Option>Enabled:UMCI</Option>
     </Rule>
     <Rule>
-      <Option>Required:WHQL</Option>
-    </Rule>
-    <Rule>
       <Option>Enabled:Inherit Default Policy</Option>
     </Rule>
     <Rule>
@@ -147,4 +144,5 @@
       </Value>
     </Setting>
   </Settings>
+
 </SiPolicy>
