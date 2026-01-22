@@ -1,0 +1,109 @@
+{
+  "domains": [
+    {
+      "domain_uuid": "__DOMAIN_UUID__",
+      "domain_name": "__CUSTOMER_DOMAIN__",
+      "domain_enabled": "true"
+    }
+  ],
+  "gateways": [
+        {
+            "gateway_uuid": "__GATEWAY_UUID__",
+            "domain_uuid": "__DOMAIN_UUID__",
+            "gateway": "CTS-__SBC_PORT__-__CUSTOMER_NAME__",
+            "username": null,
+            "password": null,
+            "distinct_to": null,
+            "auth_username": null,
+            "realm": null,
+            "from_user": null,
+            "from_domain": null,
+            "proxy": "__SBC_IP__:__SBC_PORT__",
+            "register_proxy": null,
+            "outbound_proxy": null,
+            "expire_seconds": "800",
+            "register": "false",
+            "register_transport": null,
+            "contact_params": null,
+            "retry_seconds": "30",
+            "extension": null,
+            "ping": null,
+            "ping_min": null,
+            "ping_max": null,
+            "contact_in_ping": null,
+            "caller_id_in_from": null,
+            "supress_cng": null,
+            "sip_cid_type": null,
+            "codec_prefs": null,
+            "channels": "0",
+            "extension_in_contact": null,
+            "context": "public",
+            "profile": "external",
+            "hostname": null,
+            "enabled": "true",
+            "description": null
+        }
+    ],
+  "dialplans": [
+          {
+              "domain_uuid": "__DOMAIN_UUID__",
+              "dialplan_uuid": "__DIALPLAN_FNN_UUID__",
+              "app_uuid": "8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3",
+              "hostname": null,
+              "dialplan_context": "__CUSTOMER_DOMAIN__",
+              "dialplan_name": "CTS-__SBC_PORT__-__CUSTOMER_NAME__.FNN",
+              "dialplan_number": null,
+              "dialplan_destination": "false",
+              "dialplan_continue": "false",
+              "dialplan_xml": "<extension name=\"CTS-__SBC_PORT__-__CUSTOMER_NAME__.FNN\" continue=\"false\" uuid=\"__DIALPLAN_FNN_UUID__\">\n\t<condition field=\"${user_exists}\" expression=\"false\"/>\n\t<condition field=\"destination_number\" expression=\"^(0|61|\\+61)?([2?|3-9]{1}[0-9]{8})$\">\n\t\t<action application=\"export\" data=\"call_direction=outbound\" inline=\"true\"/>\n\t\t<action application=\"unset\" data=\"call_timeout\"/>\n\t\t<action application=\"set\" data=\"hangup_after_bridge=true\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_name=${outbound_caller_id_name}\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_number=${outbound_caller_id_number}\"/>\n\t\t<action application=\"set\" data=\"inherit_codec=true\"/>\n\t\t<action application=\"set\" data=\"ignore_display_updates=true\"/>\n\t\t<action application=\"set\" data=\"callee_id_number=0$2\"/>\n\t\t<action application=\"set\" data=\"continue_on_fail=1,2,3,6,18,21,27,28,31,34,38,41,42,44,58,88,111,403,501,602,607,809\"/>\n\t\t<action application=\"bridge\" data=\"sofia/gateway/__GATEWAY_UUID__/0$2\"/>\n\t</condition>\n</extension>",
+              "dialplan_order": "100",
+              "dialplan_enabled": "true",
+              "dialplan_description": null
+          },
+          {
+              "domain_uuid": "__DOMAIN_UUID__",
+              "dialplan_uuid": "__DIALPLAN_NSW_UUID__",
+              "app_uuid": "8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3",
+              "hostname": null,
+              "dialplan_context": "__CUSTOMER_DOMAIN__",
+              "dialplan_name": "CTS-__SBC_PORT__-__CUSTOMER_NAME__.NSW",
+              "dialplan_number": null,
+              "dialplan_destination": "false",
+              "dialplan_continue": "false",
+              "dialplan_xml": "<extension name=\"CTS-__SBC_PORT__-__CUSTOMER_NAME__.NSW\" continue=\"false\" uuid=\"__DIALPLAN_NSW_UUID__\">\n\t<condition field=\"${user_exists}\" expression=\"false\"/>\n\t<condition field=\"destination_number\" expression=\"^(61|\\+61)?([3-9][0-9]{7})$\">\n\t\t<action application=\"export\" data=\"call_direction=outbound\" inline=\"true\"/>\n\t\t<action application=\"unset\" data=\"call_timeout\"/>\n\t\t<action application=\"set\" data=\"hangup_after_bridge=true\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_name=${outbound_caller_id_name}\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_number=${outbound_caller_id_number}\"/>\n\t\t<action application=\"set\" data=\"inherit_codec=true\"/>\n\t\t<action application=\"set\" data=\"ignore_display_updates=true\"/>\n\t\t<action application=\"set\" data=\"callee_id_number=02$2\"/>\n\t\t<action application=\"set\" data=\"continue_on_fail=1,2,3,6,18,21,27,28,31,34,38,41,42,44,58,88,111,403,501,602,607,809\"/>\n\t\t<action application=\"bridge\" data=\"sofia/gateway/__GATEWAY_UUID__/02$2\"/>\n\t</condition>\n</extension>",
+              "dialplan_order": "110",
+              "dialplan_enabled": "true",
+              "dialplan_description": null
+          },
+          {
+              "domain_uuid": "__DOMAIN_UUID__",
+              "dialplan_uuid": "__DIALPLAN_13xx_UUID__",
+              "app_uuid": "8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3",
+              "hostname": null,
+              "dialplan_context": "__CUSTOMER_DOMAIN__",
+              "dialplan_name": "CTS-__SBC_PORT__-__CUSTOMER_NAME__.13xx",
+              "dialplan_number": null,
+              "dialplan_destination": "false",
+              "dialplan_continue": "false",
+              "dialplan_xml": "<extension name=\"CTS-__SBC_PORT__-__CUSTOMER_NAME__.13xx\" continue=\"false\" uuid=\"__DIALPLAN_13xx_UUID__\">\n\t<condition field=\"${user_exists}\" expression=\"false\"/>\n\t<condition field=\"destination_number\" expression=\"^(1|611|\\+611)?(3[0-9]{4})$\">\n\t\t<action application=\"export\" data=\"call_direction=outbound\" inline=\"true\"/>\n\t\t<action application=\"unset\" data=\"call_timeout\"/>\n\t\t<action application=\"set\" data=\"hangup_after_bridge=true\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_name=${outbound_caller_id_name}\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_number=${outbound_caller_id_number}\"/>\n\t\t<action application=\"set\" data=\"inherit_codec=true\"/>\n\t\t<action application=\"set\" data=\"ignore_display_updates=true\"/>\n\t\t<action application=\"set\" data=\"callee_id_number=1$2\"/>\n\t\t<action application=\"set\" data=\"continue_on_fail=1,2,3,6,18,21,27,28,31,34,38,41,42,44,58,88,111,403,501,602,607,809\"/>\n\t\t<action application=\"bridge\" data=\"sofia/gateway/__GATEWAY_UUID__/1$2\"/>\n\t</condition>\n</extension>",
+              "dialplan_order": "120",
+              "dialplan_enabled": "true",
+              "dialplan_description": null
+          },
+          {
+              "domain_uuid": "__DOMAIN_UUID__",
+              "dialplan_uuid": "__DIALPLAN_1300_UUID__",
+              "app_uuid": "8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3",
+              "hostname": null,
+              "dialplan_context": "__CUSTOMER_DOMAIN__",
+              "dialplan_name": "CTS-__SBC_PORT__-__CUSTOMER_NAME__.1300",
+              "dialplan_number": null,
+              "dialplan_destination": "false",
+              "dialplan_continue": "false",
+              "dialplan_xml": "<extension name=\"CTS-__SBC_PORT__-__CUSTOMER_NAME__.13xx\" continue=\"false\" uuid=\"__DIALPLAN_1300_UUID__\">\n\t<condition field=\"${user_exists}\" expression=\"false\"/>\n\t<condition field=\"destination_number\" expression=\"^(1|611|\\+611)?([38][0-9]{8})$\">\n\t\t<action application=\"export\" data=\"call_direction=outbound\" inline=\"true\"/>\n\t\t<action application=\"unset\" data=\"call_timeout\"/>\n\t\t<action application=\"set\" data=\"hangup_after_bridge=true\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_name=${outbound_caller_id_name}\"/>\n\t\t<action application=\"set\" data=\"effective_caller_id_number=${outbound_caller_id_number}\"/>\n\t\t<action application=\"set\" data=\"inherit_codec=true\"/>\n\t\t<action application=\"set\" data=\"ignore_display_updates=true\"/>\n\t\t<action application=\"set\" data=\"callee_id_number=$1\"/>\n\t\t<action application=\"set\" data=\"continue_on_fail=1,2,3,6,18,21,27,28,31,34,38,41,42,44,58,88,111,403,501,602,607,809\"/>\n\t\t<action application=\"bridge\" data=\"sofia/gateway/__GATEWAY_UUID__/$1\"/>\n\t</condition>\n</extension>",
+              "dialplan_order": "130",
+              "dialplan_enabled": "true",
+              "dialplan_description": null
+          }
+      ]
+}
